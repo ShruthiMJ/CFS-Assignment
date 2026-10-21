@@ -9,6 +9,9 @@ Standalone Playwright Test project for shopping-site UI checks and Petstore API 
 
 ## Setup and run
 
+Setup new chnages 
+Amazon: 
+
 ```sh
 npm install
 npx playwright install chromium
