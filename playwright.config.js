@@ -12,7 +12,7 @@ module.exports = defineConfig({
   use: {
     baseURL: process.env.SHOPPING_BASE_URL || "https://www.amazon.in",
     browserName: "chromium",
-    headless: true,
+    headless: false,
     actionTimeout: 15_000,
     navigationTimeout: 45_000,
   },

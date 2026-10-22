@@ -1,6 +1,6 @@
-const {test, expect} = require("@playwright/test")
+import { test, expect } from "@playwright/test";
 
-test('Verify Amazon homepage navigation and capture screenshot', async ({page})=>
+test('"Verify Amazon homepage navigation and capture screenshot"', async ({page})=>
 {
   //browse URL
    await page.goto("https://www.amazon.com/");
@@ -20,7 +20,7 @@ test('Verify Amazon homepage navigation and capture screenshot', async ({page})=
   await page.screenshot({path: 'screenshots/AmazonHomepage.png',fullPage: true});
   
 
-  //CLick on Prime Video link and verify the page navigation
+  //CLick on Customer service link and verify the page navigation
   page.getByRole('link', { name: 'Customer Service'}).click();
   await page.waitForTimeout(5000);
   //Verify successfull page navigation
