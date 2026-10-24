@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "playwright test",
-    "test:ui": "playwright test tests/ui/shopping.spec.ts",
+    "test:ui": "playwright test tests/ui/Amazom.spec.ts",
     "test:api": "playwright test tests/api/petstore.api.spec.ts"
   },
   "devDependencies": {
